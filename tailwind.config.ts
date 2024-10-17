@@ -14,8 +14,15 @@ export default {
           '"Segoe UI Emoji"',
           '"Segoe UI Symbol"',
           '"Noto Color Emoji"',
+          
         ],
       },
+      colors: {
+        primary: "#C778DD",
+        gray: "#ABB2BF",
+        background:"#282C33",
+        forground: "#FFFFFF"
+      }
     },
   },
   plugins: [],
