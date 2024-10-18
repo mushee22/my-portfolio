@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function Quote() {
   return (
-    <section className="relative">
-          <div className="w-[91px] h-[91px] border absolute -right-2 top-1/4 border-gray"></div>
-          <div className="text-forground relative text-2xl border p-8 max-w-fit mx-auto font-medium">
+    <section className="relative max-sm:px-3">
+          <div className="w-[91px] h-[91px] hidden lg:block border absolute -right-2 top-1/4 border-gray"></div>
+          <div className="text-forground relative text-lg sm:text-2xl border p-8 max-w-fit mx-auto font-medium">
             <p className="">
               With great power comes great electricity bill
               <div className="absolute top-0 -translate-y-1/2 left-4">

@@ -1,17 +1,13 @@
 import React from 'react'
 import AboutImage from 'app/assets/about-image.png'
+import SectionHeader from '~/components/SectionHeader'
 
 export default function AboutSection() {
     return (
-        <section className='mt-[60px] relative'>
-            <div className=' container mx-auto pt-8 flex items-center justify-between'>
+        <section className='mt-8 md:mt-[60px] relative'>
+            <div className=' container max-sm:px-3 mx-auto  flex items-center justify-between'>
                 <div className='font-normal text-gray space-y-6 max-w-[515px]'>
-                    <div className="flex gap-x-4 items-center">
-                        <h3 className="text-forground text-[32px] font-medium">
-                            <span className="text-primary">#</span>about-me
-                        </h3>
-                        <div className="h-[1px] bg-primary w-[300px]"></div>
-                    </div>
+                    <SectionHeader sectionName='about-me' />
                     <p> Hello, i’m Elias!</p>
                     <p>
                         I’m a self-taught front-end developer based in Kyiv,
@@ -27,11 +23,11 @@ export default function AboutSection() {
                         Read more {"->"}
                     </button>
                 </div>
-                <div>
+                <div className=' hidden md:block '>
                     <img src={AboutImage} alt='' />
                 </div>
             </div>
-            <div className='absolute right-0 bottom-10'>
+            <div className='absolute right-0 bottom-10 hidden lg:block'>
                 <svg width="80" height="103" viewBox="0 0 80 103" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="2" cy="2" r="2" fill="#ABB2BF" />
                     <circle cx="26.75" cy="2" r="2" fill="#ABB2BF" />
@@ -55,7 +51,7 @@ export default function AboutSection() {
                     <circle cx="76.25" cy="101" r="2" fill="#ABB2BF" />
                 </svg>
             </div>
-            <div className='w-[75px] h-[155px] absolute -left-[40px]  top-1/2 -translate-y-[100px]  border border-gray'></div>
+            <div className='w-[75px] hidden lg:block h-[155px] absolute -left-[40px]  top-1/2 -translate-y-[100px]  border border-gray'></div>
         </section>
     )
 }

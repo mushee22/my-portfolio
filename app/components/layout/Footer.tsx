@@ -2,10 +2,10 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <footer className='mt-[145px] border-t border-gray py-8'>
-            <div className='container mx-auto flex justify-between'>
+        <footer className=' mt-10 md:mt-[145px] border-t border-gray py-8'>
+            <div className='container max-sm:px-3 mx-auto flex  justify-between'>
                 <div className='space-y-3'>
-                    <div className='flex items-center gap-x-2'>
+                    <div className='flex flex-col sm:flex-row sm:items-center gap-x-2'>
                         <p className='font-medium text-forground'>Muhamed Musheer</p>
                         <p className='font-medium text-gray'>mmtmusheer@gmail.com</p>
                     </div>

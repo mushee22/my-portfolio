@@ -1,21 +1,14 @@
 import React from 'react'
+import SectionHeader from '~/components/SectionHeader'
 
 export default function ContactSection() {
     return (
-        <section className="pt-[60px] relative ">
-            <div className='container mx-auto'>
-                <div className="flex justify-between items-center">
-                    <div className="flex gap-x-4 items-center">
-                        <h3 className="text-forground text-[32px] font-medium">
-                            <span className="text-primary">#</span>contacts
-                        </h3>
-                        <div className="h-[1px] bg-primary w-[300px]"></div>
-
-                    </div>
-                </div>
-                <div className='flex items-center justify-between pt-8 font-normal text-gray'>
+        <section className=" pt-8 md:pt-[60px] relative ">
+            <div className='container max-sm:px-3 mx-auto'>
+                <SectionHeader sectionName='contacts'/>
+                <div className='flex flex-col sm:flex-row sm:items-center justify-between pt-8 font-normal text-gray'>
                     <p className='max-w-[515px]'>I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me</p>
-                    <div className='p-4 border mt-4 space-y-2'>
+                    <div className='p-4 border mt-4 space-y-2 w-fit'>
                         <span className='text-white font-medium'>Message me here</span>
                         <div className='flex items-center gap-x-1'>
                             <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,7 +25,7 @@ export default function ContactSection() {
                     </div>
                 </div>
             </div>
-            <div className='absolute left-[-35px] top-1/2'>
+            <div className='absolute left-[-35px] top-1/ hidden md:block'>
                 <svg width="80" height="103" viewBox="0 0 80 103" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="2" cy="2" r="2" fill="#ABB2BF" />
                     <circle cx="26.75" cy="2" r="2" fill="#ABB2BF" />

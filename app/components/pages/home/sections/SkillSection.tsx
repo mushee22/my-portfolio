@@ -1,23 +1,16 @@
 import React from 'react'
 import LeftSideImage from 'app/assets/skill-left-side-image.png'
+import SectionHeader from '~/components/SectionHeader'
 
 export default function SkillSection() {
     return (
-        <section className="pt-[90px] container mx-auto ">
-            <div className="flex justify-between items-center">
-                <div className="flex gap-x-4 items-center">
-                    <h3 className="text-forground text-[32px] font-medium">
-                        <span className="text-primary">#</span>skills
-                    </h3>
-                    <div className="h-[1px] bg-primary w-[300px]"></div>
-
-                </div>
-            </div>
-            <div className='flex gap-x-6 justify-between'>
-                <div className='mt-3'>
+        <section className="pt-8 md:pt-[90px] container max-sm:px-3 mx-auto ">
+            <SectionHeader sectionName='Skills'/>
+            <div className='flex gap-x-6 justify-between mt-6 md:mt-8'>
+                <div className='mt-3 hidden md:block'>
                     <img src={LeftSideImage} alt='Left side image' />
                 </div>
-                <div className='flex items-start gap-x-4'>
+                <div className=' grid grid-cols-2 sm:flex sm:flex-row sm:items-start gap-x-4'>
                     <div className='border border-gray '>
                         <div className='border-b border-gray py-2 px-2'>
                             <span className='font-medium text-forground'>Languages</span>

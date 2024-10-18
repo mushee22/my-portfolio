@@ -1,26 +1,54 @@
 import React from 'react'
+import { Link, NavLink } from "@remix-run/react";
 
 export default function NavBar() {
   return (
     <header>
-     <nav className="text-gray container mx-auto flex justify-between pt-8 px-4">
-        <h1 className="font-bold">Muhamed Musheer</h1>
+      <nav className="text-gray container mx-auto flex flex-col items-center sm:flex-row sm:justify-between pt-8 px-4">
+        <h1 className="font-bold">
+          <Link to='/'>Muhamed Musheer</Link>
+        </h1>
         <ul className="font-normal flex items-center gap-x-4">
           <li>
-            <a href="#"><span className="text-primary">#</span>home</a>
+            <NavLink to="/"
+              className={({ isActive, isPending }) =>
+                isPending ? "text-white" : isActive ? "text-white" : "text-gray"
+              }
+            >
+              <span className="text-primary">#</span>home
+            </NavLink>
           </li>
           <li>
-            <a href="#"><span className="text-primary">#</span>works</a>
+            <NavLink to="/works"
+              className={({ isActive, isPending }) =>
+                isPending ? "text-white" : isActive ? "text-white" : "text-gray"
+              }
+            >
+              <span className="text-primary">#</span>Works
+            </NavLink>
           </li>
           <li>
-            <a href="#"><span className="text-primary">#</span>about-me</a>
+          <NavLink to="/about-me"
+              className={({ isActive, isPending }) =>
+                isPending ? "text-white" : isActive ? "text-white" : "text-gray"
+              }
+            >
+              <span className="text-primary">#</span>about-me
+            </NavLink>
+            
           </li>
           <li>
-            <a href="#"><span className="text-primary">#</span>contacts</a>
+          <NavLink to="/contact"
+              className={({ isActive, isPending }) =>
+                isPending ? "text-white" : isActive ? "text-white" : "text-gray"
+              }
+            >
+              <span className="text-primary">#</span>contact
+            </NavLink>
           </li>
         </ul>
       </nav>
-      <div className="w-fit fixed top-0 left-3 flex flex-col justify-center items-center space-y-3">
+      <div className="w-fit  fixed top-0 left-3 hidden sm:flex flex-col justify-center items-center space-y-3">
         {/* <div className="h-[120px] w-[1px] bg-gray"></div> */}
         <svg width="2" height="191" viewBox="0 0 2 191" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fillRule="evenodd" clipRule="evenodd" d="M0.499992 191L0.5 0L1.5 4.37114e-08L1.49999 191L0.499992 191Z" fill="#ABB2BF" />
