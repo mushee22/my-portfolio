@@ -10,7 +10,7 @@ export default function SkillSection() {
                 <div className='mt-3 hidden md:block'>
                     <img src={LeftSideImage} alt='Left side image' />
                 </div>
-                <div className=' grid grid-cols-2 sm:flex sm:flex-row sm:items-start gap-x-4'>
+                <div className=' grid grid-cols-2 sm:flex sm:flex-row sm:items-start gap-4'>
                     <div className='border border-gray '>
                         <div className='border-b border-gray py-2 px-2'>
                             <span className='font-medium text-forground'>Languages</span>
